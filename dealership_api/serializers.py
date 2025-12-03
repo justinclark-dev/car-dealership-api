@@ -12,9 +12,11 @@ class CarSerializer(serializers.ModelSerializer):
             'year',
             'trim',
             'color',
-            'price',
+            'price_listed',
             'milage',
             'sale_pending',
             'sold',
-            'days_on_lot'
+            'days_on_lot',
+            'buyer',
+            'price_sold'
         ) # tell django which fields to include
