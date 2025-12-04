@@ -1,0 +1,60 @@
+-- PostgreSQL Seeder for dealership_api_car
+-- 50 exotic cars: 20 available, 20 sold, 10 pending
+-- Mix of vintage and modern exotic vehicles
+
+-- Available Cars (20)
+INSERT INTO dealership_api_car (make, model, year, trim, color, price_listed, milage, sale_pending, sold, days_on_lot, buyer, price_sold) VALUES
+('Ferrari', '488 GTB', 2018, 'Base', 'Rosso Corsa', 245000.00, 8500, false, false, 45, NULL, NULL),
+('Lamborghini', 'Huracan', 2020, 'EVO', 'Verde Mantis', 289000.00, 5200, false, false, 23, NULL, NULL),
+('Porsche', '911', 2021, 'Turbo S', 'Guards Red', 215000.00, 3800, false, false, 12, NULL, NULL),
+('McLaren', '720S', 2019, 'Performance', 'Burton Blue', 298000.00, 6700, false, false, 67, NULL, NULL),
+('Aston Martin', 'DB11', 2022, 'V8', 'Magnetic Silver', 225000.00, 1200, false, false, 8, NULL, NULL),
+('Ferrari', 'F355', 1998, 'Berlinetta', 'Giallo Modena', 135000.00, 28500, false, false, 89, NULL, NULL),
+('Lamborghini', 'Gallardo', 2012, 'LP560-4', 'Bianco Isis', 145000.00, 18900, false, false, 134, NULL, NULL),
+('Porsche', '911', 1989, 'Carrera', 'Guards Red', 125000.00, 62000, false, false, 201, NULL, NULL),
+('McLaren', '570S', 2017, 'Base', 'Ventura Orange', 165000.00, 12400, false, false, 56, NULL, NULL),
+('Bugatti', 'Chiron', 2020, 'Base', 'Nocturne Black', 3200000.00, 1800, false, false, 15, NULL, NULL),
+('Pagani', 'Huayra', 2021, 'Coupe', 'Bianco Benny', 2800000.00, 900, false, false, 31, NULL, NULL),
+('Koenigsegg', 'Jesko', 2022, 'Attack', 'Jet Grey', 3500000.00, 500, false, false, 19, NULL, NULL),
+('Maserati', 'MC20', 2023, 'Base', 'Bianco Audace', 242000.00, 800, false, false, 6, NULL, NULL),
+('Lotus', 'Evora', 2020, 'GT', 'Racing Green', 98000.00, 7200, false, false, 78, NULL, NULL),
+('Ferrari', 'Roma', 2021, 'Base', 'Argento Nurburgring', 238000.00, 4500, false, false, 42, NULL, NULL),
+('Lamborghini', 'Aventador', 2019, 'SVJ', 'Rosso Mars', 548000.00, 3200, false, false, 28, NULL, NULL),
+('Porsche', 'Cayman', 2022, 'GT4 RS', 'Python Green', 165000.00, 2100, false, false, 11, NULL, NULL),
+('Aston Martin', 'Vantage', 2023, 'Base', 'Aston Martin Racing Green', 168000.00, 600, false, false, 4, NULL, NULL),
+('Ferrari', 'Testarossa', 1991, 'Base', 'Rosso Corsa', 185000.00, 42000, false, false, 156, NULL, NULL),
+('Lamborghini', 'Countach', 1988, 'LP5000 QV', 'Bianco Polo', 495000.00, 15200, false, false, 223, NULL, NULL),
+
+-- Pending Sale Cars (10)
+('Ferrari', 'F8 Tributo', 2021, 'Base', 'Blu Corsa', 318000.00, 2800, true, false, 18, NULL, NULL),
+('Porsche', '911', 2020, 'GT3 RS', 'Lava Orange', 285000.00, 4200, true, false, 34, NULL, NULL),
+('McLaren', 'Artura', 2023, 'Base', 'McLaren Orange', 265000.00, 800, true, false, 9, NULL, NULL),
+('Lamborghini', 'Urus', 2022, 'Base', 'Nero Noctis', 245000.00, 6500, true, false, 25, NULL, NULL),
+('Aston Martin', 'DBS', 2021, 'Superleggera', 'Jet Black', 335000.00, 3100, true, false, 41, NULL, NULL),
+('Ferrari', '812', 2020, 'Superfast', 'Giallo Triplo Strato', 385000.00, 5600, true, false, 52, NULL, NULL),
+('Maserati', 'GranTurismo', 2018, 'Sport', 'Blu Passione', 95000.00, 11200, true, false, 67, NULL, NULL),
+('Porsche', '918', 2015, 'Spyder', 'Liquid Metal Silver', 1650000.00, 2400, true, false, 14, NULL, NULL),
+('Lotus', 'Emira', 2023, 'First Edition', 'Hethel Yellow', 98000.00, 500, true, false, 7, NULL, NULL),
+('Koenigsegg', 'Regera', 2019, 'Base', 'Carbon Fiber', 2100000.00, 1200, true, false, 22, NULL, NULL),
+
+-- Sold Cars (20)
+('Ferrari', '458 Italia', 2014, 'Base', 'Rosso Scuderia', 195000.00, 14500, false, true, 76, 'Michael Chen', 188000.00),
+('Lamborghini', 'Huracan', 2017, 'LP610-4', 'Arancio Borealis', 215000.00, 9800, false, true, 62, 'Sarah Williams', 208000.00),
+('Porsche', '911', 2019, 'Carrera S', 'Miami Blue', 138000.00, 8200, false, true, 48, 'David Thompson', 135000.00),
+('McLaren', '650S', 2016, 'Spider', 'Volcano Orange', 175000.00, 11500, false, true, 91, 'Jennifer Rodriguez', 168000.00),
+('Aston Martin', 'Vanquish', 2018, 'S', 'Ming Blue', 185000.00, 7900, false, true, 58, 'Robert Martinez', 178000.00),
+('Ferrari', '360', 2003, 'Modena', 'Giallo Modena', 98000.00, 38000, false, true, 145, 'Lisa Anderson', 94000.00),
+('Lamborghini', 'Murcielago', 2008, 'LP640', 'Verde Ithaca', 225000.00, 22000, false, true, 118, 'James Wilson', 218000.00),
+('Porsche', '911', 2016, 'GT3', 'White', 168000.00, 10200, false, true, 72, 'Maria Garcia', 162000.00),
+('Maserati', 'MC12', 2005, 'Base', 'Blue/White', 1850000.00, 5200, false, true, 203, 'Richard Foster', 1825000.00),
+('Lotus', 'Exige', 2018, 'Sport 410', 'Essex Blue', 82000.00, 8900, false, true, 95, 'Emily Parker', 78000.00),
+('Ferrari', 'California', 2013, 'T', 'Nero Daytona', 145000.00, 16800, false, true, 134, 'Thomas Lee', 138000.00),
+('Lamborghini', 'Revuelto', 2023, 'Base', 'Giallo Auge', 625000.00, 1200, false, true, 29, 'Christopher Brown', 615000.00),
+('Porsche', 'Boxster', 2021, 'GTS 4.0', 'Carmine Red', 92000.00, 5400, false, true, 41, 'Amanda Taylor', 88000.00),
+('McLaren', '540C', 2017, 'Base', 'Silica White', 155000.00, 13200, false, true, 87, 'Daniel Johnson', 148000.00),
+('Aston Martin', 'Rapide', 2016, 'S', 'Onyx Black', 125000.00, 19500, false, true, 112, 'Michelle Davis', 118000.00),
+('Ferrari', 'F430', 2007, 'Spider', 'Rosso Corsa', 148000.00, 24000, false, true, 167, 'Kevin Zhang', 142000.00),
+('Pagani', 'Zonda', 2011, 'F', 'Blu Tricolore', 2400000.00, 3100, false, true, 88, 'Victoria Hunt', 2350000.00),
+('Porsche', '911', 1995, 'Turbo', 'Arena Red', 195000.00, 48000, false, true, 178, 'Andrew Mitchell', 188000.00),
+('Lamborghini', 'Diablo', 1995, 'VT', 'Viola Pasifae', 285000.00, 32000, false, true, 201, 'Jessica White', 275000.00),
+('Ferrari', '550', 2001, 'Maranello', 'Grigio Alloy', 165000.00, 29000, false, true, 156, 'Brandon Scott', 158000.00);
