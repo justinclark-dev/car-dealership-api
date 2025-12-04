@@ -10,6 +10,7 @@ class CarSerializer(serializers.ModelSerializer):
             'make',
             'model',
             'year',
+            'photo',
             'trim',
             'color',
             'price_listed',
